@@ -29,20 +29,20 @@
                     android:layout_alignParentStart="true"
                     android:src="@drawable/name" />
 
-                <TextView
-                    android:id="@+id/tvJoinLogin"
-                    android:foregroundGravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginEnd="20sp"
-                    android:fontFamily="@font/poppins"
-                    android:gravity="center"
-                    android:text="Join"
-                    android:textColor="?android:textColorPrimary"
-                    android:textSize="18sp"
-                    app:drawableRightCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+<!--                <TextView-->
+<!--                    android:id="@+id/tvJoinLogin"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginEnd="20sp"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:foregroundGravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Join"-->
+<!--                    android:textColor="?android:textColorPrimary"-->
+<!--                    android:textSize="18sp"-->
+<!--                    app:drawableRightCompat="@drawable/ic_baseline_arrow_drop_down_24" />-->
 
             </RelativeLayout>
 
@@ -220,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="30sp"
+                    android:layout_marginStart="10sp"
                     android:fontFamily="@font/poppins"
                     android:text="Remember Me"
                     android:textColor="?android:textColorPrimary" />

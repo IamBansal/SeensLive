@@ -1,9 +1,417 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
     tools:context=".pages.Signup">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSignup"
+                    android:layout_width="200sp"
+                    android:layout_height="80sp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/name" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvJoinSignup"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginEnd="20sp"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:foregroundGravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Join"-->
+<!--                    android:textColor="?android:textColorPrimary"-->
+<!--                    android:textSize="18sp"-->
+<!--                    app:drawableRightCompat="@drawable/ic_baseline_arrow_drop_down_24" />-->
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Welcome to Seenslive"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/text2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/text1"-->
+<!--        android:layout_marginStart="10sp"-->
+<!--        android:layout_marginTop="5sp"-->
+<!--        android:layout_marginEnd="10sp"-->
+<!--        android:layout_marginBottom="5sp"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Share your memories, connect with others, make new friends"-->
+<!--        android:textColor="?android:textColorPrimary" />-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="8sp"
+        app:cardCornerRadius="20sp"
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                app:cardCornerRadius="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="240sp"
+                    android:layout_marginTop="-25sp"
+                    android:layout_height="100sp"
+                    android:forceDarkAllowed="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/square1" />
+
+                <TextView
+                    android:text="register"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="5sp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="?android:textColorSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/grey"
+                android:id="@+id/cardEmailSignup"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="10sp"
+                android:layout_below="@id/card"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:background="@color/grey"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginStart="10sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_email_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etEmailSignup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Email"
+                        android:background="@color/lightBlue"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10sp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorPrimary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/grey"
+                android:id="@+id/cardPassSignup"
+                android:layout_marginStart="50sp"
+                android:layout_marginBottom="10sp"
+                android:layout_below="@id/cardEmailSignup"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:background="@color/grey"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginStart="10sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_vpn_key_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etPassSignup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Password"
+                        android:background="@color/lightBlue"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="10sp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorPrimary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/grey"
+                android:id="@+id/cardFirstName"
+                android:layout_marginStart="50sp"
+                android:layout_marginBottom="10sp"
+                android:layout_below="@id/cardPassSignup"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:background="@color/grey"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginStart="10sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_person_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:fontFamily="@font/poppins"
+                        android:hint="First name"
+                        android:background="@color/lightBlue"
+                        android:maxLines="1"
+                        android:padding="10sp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorPrimary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/grey"
+                android:id="@+id/cardLastName"
+                android:layout_marginStart="50sp"
+                android:layout_marginBottom="10sp"
+                android:layout_below="@id/cardFirstName"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:background="@color/grey"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginStart="10sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_person_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Last name"
+                        android:background="@color/lightBlue"
+                        android:maxLines="1"
+                        android:padding="10sp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorPrimary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/grey"
+                android:id="@+id/cardUsername"
+                android:layout_marginStart="50sp"
+                android:layout_marginBottom="10sp"
+                android:layout_below="@id/cardLastName"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:background="@color/grey"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginStart="10sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_back_hand_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Username"
+                        android:background="@color/lightBlue"
+                        android:maxLines="1"
+                        android:padding="10sp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorPrimary" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/llRemember"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/cardPassLogin"-->
+<!--                android:layout_marginStart="10sp"-->
+<!--                android:layout_marginEnd="10sp"-->
+<!--                android:layout_marginBottom="10sp">-->
+
+<!--                <CheckBox-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginStart="10sp"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:text="Remember Me"-->
+<!--                    android:textColor="?android:textColorPrimary" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginEnd="30sp"-->
+<!--                    android:fontFamily="@font/poppins"-->
+<!--                    android:text="Forgotten password?"-->
+<!--                    android:textColor="@color/app" />-->
+
+<!--            </RelativeLayout>-->
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardUsername"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/oval"
+                android:fontFamily="@font/poppins"
+                android:text="Signup"
+                android:textAllCaps="false"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSignUp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50sp"
+                android:layout_marginBottom="15sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text="Have an account?"
+                    android:textColor="?android:textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/tvAlreadyUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text=" Login now"
+                    android:textColor="?android:colorPrimary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
