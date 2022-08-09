@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.SeensLive" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
+        <item name="android:fontFamily">@font/poppins</item>
         <item name="colorPrimary">@color/app</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/app</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:textColorPrimary">@color/black</item>
         <!-- Secondary brand color. -->
