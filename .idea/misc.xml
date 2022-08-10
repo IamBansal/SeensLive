@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_crisis_alert_24.xml" value="0.1025" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/oval_et.xml" value="0.1035" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_home.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_login.xml" value="0.14907407407407408" />
@@ -11,6 +12,7 @@
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_message.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_notification.xml" value="0.21822916666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_search.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_settings.xml" value="0.21481481481481482" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
       </map>

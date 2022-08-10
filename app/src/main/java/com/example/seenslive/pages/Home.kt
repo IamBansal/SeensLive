@@ -24,12 +24,12 @@ class Home : AppCompatActivity() {
 
         drawerLayout = findViewById(R.id.drawerLayout)
 
-        actionBarToggle = ActionBarDrawerToggle(this, drawerLayout, 0, 0)
-        drawerLayout.addDrawerListener(actionBarToggle)
+//        actionBarToggle = ActionBarDrawerToggle(this, drawerLayout, 0, 0)
+//        drawerLayout.addDrawerListener(actionBarToggle)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        actionBarToggle.syncState()
+//        actionBarToggle.syncState()
 
         navView = findViewById(R.id.navView)
 
@@ -37,29 +37,25 @@ class Home : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.profileDrawer -> {
                     Toast.makeText(this, "My Profile", Toast.LENGTH_SHORT).show()
-                    true
                 }
                 R.id.groups -> {
                     Toast.makeText(this, "Friends", Toast.LENGTH_SHORT).show()
-                    true
                 }
                 R.id.settings -> {
-                    Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
-                    true
+                    setCurrentFragment(SettingsFragment())
+                    this.drawerLayout.closeDrawer(GravityCompat.START)
+                    drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+                    drawerLayout.close()
                 }
                 R.id.gifts -> {
                     Toast.makeText(this, "Gifts to you", Toast.LENGTH_SHORT).show()
-                    true
                 }
                 R.id.messageDrawer -> {
                     setCurrentFragment(MessageFragment())
                     this.drawerLayout.closeDrawer(GravityCompat.START)
-                    true
-                }
-                else -> {
-                    false
                 }
             }
+            true
         }
 
 
@@ -99,6 +95,7 @@ class Home : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         drawerLayout.openDrawer(navView)
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
         return true
     }
 
@@ -111,8 +108,5 @@ class Home : AppCompatActivity() {
     }
 
     private fun setCurrentFragment(fragment: Fragment) =
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flFragment, fragment)
-            commit()
-        }
+        supportFragmentManager.beginTransaction().replace(R.id.flFragment, fragment).commit()
 }
