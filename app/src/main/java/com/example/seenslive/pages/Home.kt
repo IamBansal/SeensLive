@@ -36,7 +36,10 @@ class Home : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.profileDrawer -> {
-                    Toast.makeText(this, "My Profile", Toast.LENGTH_SHORT).show()
+                    setCurrentFragment(ProfileFragment())
+                    this.drawerLayout.closeDrawer(GravityCompat.START)
+                    drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+                    drawerLayout.close()
                 }
                 R.id.groups -> {
                     Toast.makeText(this, "Friends", Toast.LENGTH_SHORT).show()
