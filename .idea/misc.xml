@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.167" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_crisis_alert_24.xml" value="0.1025" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/oval.xml" value="0.167" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/oval_et.xml" value="0.1035" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_home.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_login.xml" value="0.14907407407407408" />
