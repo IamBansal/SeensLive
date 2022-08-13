@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="7sp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="5sp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfileMessage"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/pic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kritika Sharma"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMsgMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTimeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 minutes ago"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

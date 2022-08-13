@@ -35,13 +35,17 @@ class Home : AppCompatActivity() {
                     this@Home.drawerLayout.tag = "Close"
                 }
                 R.id.groups -> {
-                    Toast.makeText(this, "Friends", Toast.LENGTH_SHORT).show()
+                    setCurrentFragment(FriendsFragment(), 2)
+                    this.drawerLayout.closeDrawer(GravityCompat.START)
+                    this@Home.drawerLayout.tag = "Close"
                 }
                 R.id.settings -> {
                     setCurrentFragment(SettingsFragment(), 0)
                 }
                 R.id.gifts -> {
-                    Toast.makeText(this, "Gifts to you", Toast.LENGTH_SHORT).show()
+                    setCurrentFragment(GiftsFragment(), 5)
+                    this.drawerLayout.closeDrawer(GravityCompat.START)
+                    this@Home.drawerLayout.tag = "Close"
                 }
                 R.id.messageDrawer -> {
                     setCurrentFragment(MessageFragment(), 3)
@@ -66,9 +70,12 @@ class Home : AppCompatActivity() {
                         this@Home.drawerLayout.tag = "Open"
                     }
                     1 -> setCurrentFragment(HomeFragment(), 1)
+                    2 -> setCurrentFragment(FriendsFragment(), 2)
                     3 -> setCurrentFragment(MessageFragment(), 3)
                     4 -> setCurrentFragment(NotificationFragment(), 4)
+                    5 -> setCurrentFragment(GiftsFragment(), 5)
                     6 -> setCurrentFragment(SearchFragment(), 6)
+                    7 -> setCurrentFragment(ProfileFragment(), 7)
                 }
             }
 
