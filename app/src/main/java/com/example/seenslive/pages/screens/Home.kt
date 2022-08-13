@@ -1,4 +1,4 @@
-package com.example.seenslive.pages
+package com.example.seenslive.pages.screens
 
 import android.os.Bundle
 import android.widget.Toast
@@ -7,6 +7,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.seenslive.R
+import com.example.seenslive.pages.fragments.*
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 

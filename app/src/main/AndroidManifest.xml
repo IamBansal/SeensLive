@@ -14,16 +14,16 @@
         android:theme="@style/Theme.SeensLive"
         tools:targetApi="31">
         <activity
-            android:name=".pages.Login"
+            android:name=".pages.screens.Login"
             android:exported="false" />
         <activity
-            android:name=".pages.Signup"
+            android:name=".pages.screens.Signup"
             android:exported="false" />
         <activity
-            android:name=".pages.MainActivity"
+            android:name=".pages.screens.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".pages.Home"
+            android:name=".pages.screens.Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

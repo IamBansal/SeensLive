@@ -1,4 +1,4 @@
-package com.example.seenslive.pages
+package com.example.seenslive.pages.screens
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,25 +6,26 @@ import android.os.Bundle
 import android.widget.TextView
 import com.example.seenslive.R
 
-class Signup : AppCompatActivity() {
+class Login : AppCompatActivity() {
 
-    private lateinit var login : TextView
+    private lateinit var signUp : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.activity_login)
 
-        login = findViewById(R.id.tvAlreadyUser)
+        signUp = findViewById(R.id.tvNewUser)
 
-        login.setOnClickListener {
-            startActivity(Intent(this, Login::class.java))
+        signUp.setOnClickListener {
+            startActivity(Intent(this, Signup::class.java))
         }
+
 
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
-        startActivity(Intent(this, Login::class.java))
+        finishAffinity()
     }
 
 }

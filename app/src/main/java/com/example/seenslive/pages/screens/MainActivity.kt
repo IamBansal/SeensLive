@@ -1,4 +1,4 @@
-package com.example.seenslive.pages
+package com.example.seenslive.pages.screens
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

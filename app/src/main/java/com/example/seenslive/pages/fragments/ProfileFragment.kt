@@ -1,4 +1,4 @@
-package com.example.seenslive.pages
+package com.example.seenslive.pages.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
