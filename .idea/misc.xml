@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/custom_badge.xml" value="0.187" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.117" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.167" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_crisis_alert_24.xml" value="0.1025" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1" />
@@ -13,21 +15,26 @@
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/ic_search_white.xml" value="0.187" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/oval.xml" value="0.167" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/oval_et.xml" value="0.1035" />
-        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_home.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/drawable/story_color.xml" value="0.117" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_login.xml" value="0.14907407407407408" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/activity_signup.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_badge.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_friend_request.xml" value="0.1905982905982906" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_message.xml" value="0.23125" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_notification.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_post_item.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_sent_request.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_story_item.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/custom_tab_item.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/cutsom_discover_friends.xml" value="0.1734375" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/cutsom_tab_item.xml" value="0.23125" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_friends.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_gifts.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_home.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_home.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_message.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_notification.xml" value="0.21822916666666667" />
-        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_profile.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_search.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/layout/fragment_settings.xml" value="0.21481481481481482" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/SeensLive/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23229166666666667" />

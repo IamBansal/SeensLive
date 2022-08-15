@@ -1,7 +1,7 @@
 package com.example.seenslive.pages.screens
 
+import android.graphics.Color
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -59,6 +59,9 @@ class Home : AppCompatActivity() {
 
         tabLayout = findViewById(R.id.tabLayout)
 
+        setBadge(2, resources.getColor(R.color.primary_dark), resources.getColor(R.color.white), 2)
+        setBadge(4, resources.getColor(R.color.hearty), resources.getColor(R.color.white), 5)
+
         setCurrentFragment(HomeFragment(), 1)
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
@@ -94,6 +97,17 @@ class Home : AppCompatActivity() {
                 }
             }
         })
+    }
+
+    //To set the badge on tab item
+    private fun setBadge(index: Int, backgroundColor: Int, textColor: Int, count: Int) {
+        tabLayout.getTabAt(index)?.apply {
+            orCreateBadge
+            badge?.badgeTextColor = textColor
+            badge?.backgroundColor = backgroundColor
+            badge?.number = count
+            badge?.isVisible = true
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
