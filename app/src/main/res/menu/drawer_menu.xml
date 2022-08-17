@@ -5,21 +5,17 @@
         android:title="Akshat Bansal"
         android:icon="@drawable/ic_baseline_person_24"/>
     <item
-        android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_baseline_settings_24"/>
-    <item
         android:id="@+id/messageDrawer"
         android:title="Message"
         android:icon="@drawable/ic_baseline_message_24"/>
     <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+    <item
         android:id="@+id/gifts"
         android:title="Gifts"
         android:icon="@drawable/ic_baseline_email_24"/>
-    <item
-        android:id="@+id/groups"
-        android:title="Friends"
-        android:icon="@drawable/ic_baseline_groups_24"/>
     <item
         android:id="@+id/news"
         android:title="News Feed"
@@ -41,27 +37,55 @@
         android:title="Memories"
         android:icon="@drawable/ic_baseline_groups_24"/>
     <item
-        android:id="@+id/ads"
-        android:title="Ads Manager"
+        android:id="@+id/people"
+        android:title="People"
         android:icon="@drawable/ic_baseline_groups_24"/>
     <item
-        android:id="@+id/wallet"
-        android:title="Wallet"
+        android:id="@+id/pages"
+        android:title="Pages"
         android:icon="@drawable/ic_baseline_groups_24"/>
     <item
-        android:id="@+id/blogs"
-        android:title="Blogs"
-        android:icon="@drawable/ic_baseline_groups_24"/>
-    <item
-        android:id="@+id/forums"
-        android:title="Forums"
+        android:id="@+id/groups"
+        android:title="Groups"
         android:icon="@drawable/ic_baseline_groups_24"/>
     <item
         android:id="@+id/events"
         android:title="Events"
         android:icon="@drawable/ic_baseline_groups_24"/>
     <item
+        android:id="@+id/blogs"
+        android:title="Blogs"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
         android:id="@+id/marketPlace"
         android:title="Marketplace"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/offers"
+        android:title="Offers"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/jobs"
+        android:title="Jobs"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/forums"
+        android:title="Forums"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/movies"
+        android:title="Movies"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/games"
+        android:title="Games"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/ads"
+        android:title="Ads Manager"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+    <item
+        android:id="@+id/wallet"
+        android:title="Wallet"
         android:icon="@drawable/ic_baseline_groups_24"/>
 </menu>

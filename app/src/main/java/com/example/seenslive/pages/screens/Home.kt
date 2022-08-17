@@ -1,6 +1,5 @@
 package com.example.seenslive.pages.screens
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -35,8 +34,8 @@ class Home : AppCompatActivity() {
                     this.drawerLayout.closeDrawer(GravityCompat.START)
                     this@Home.drawerLayout.tag = "Close"
                 }
-                R.id.groups -> {
-                    setCurrentFragment(FriendsFragment(), 2)
+                R.id.messageDrawer -> {
+                    setCurrentFragment(MessageFragment(), 3)
                     this.drawerLayout.closeDrawer(GravityCompat.START)
                     this@Home.drawerLayout.tag = "Close"
                 }
@@ -48,10 +47,61 @@ class Home : AppCompatActivity() {
                     this.drawerLayout.closeDrawer(GravityCompat.START)
                     this@Home.drawerLayout.tag = "Close"
                 }
-                R.id.messageDrawer -> {
-                    setCurrentFragment(MessageFragment(), 3)
+                R.id.news -> {
+                    setCurrentFragment(MyArticles(), 0)
+                }
+                R.id.articles -> {
+                    setCurrentFragment(MyArticles(), 0)
+                }
+                R.id.products -> {
+                    setCurrentFragment(MyProducts(), 0)
+                }
+                R.id.savedPosts -> {
+                    setCurrentFragment(SavedPosts(), 0)
+                }
+                R.id.memory -> {
+                    setCurrentFragment(Memories(), 0)
+                }
+                R.id.people -> {
+                    setCurrentFragment(FriendsFragment(), 2)
                     this.drawerLayout.closeDrawer(GravityCompat.START)
                     this@Home.drawerLayout.tag = "Close"
+                }
+                R.id.pages -> {
+                    setCurrentFragment(PagesFragment(), 0)
+                }
+                R.id.groups -> {
+                    setCurrentFragment(Groups(), 0)
+                }
+                R.id.events -> {
+                    setCurrentFragment(MyEvents(), 0)
+                }
+                R.id.blogs -> {
+                    setCurrentFragment(Blogs(), 0)
+                }
+                R.id.marketPlace -> {
+                    setCurrentFragment(MarketPlace(), 0)
+                }
+                R.id.offers -> {
+                    setCurrentFragment(Offers(), 0)
+                }
+                R.id.jobs -> {
+                    setCurrentFragment(Jobs(), 0)
+                }
+                R.id.forums -> {
+                    setCurrentFragment(Forums(), 0)
+                }
+                R.id.movies -> {
+                    setCurrentFragment(Movies(), 0)
+                }
+                R.id.games -> {
+                    setCurrentFragment(Games(), 0)
+                }
+                R.id.ads -> {
+                    setCurrentFragment(Memories(), 0)
+                }
+                R.id.wallet -> {
+                    setCurrentFragment(Memories(), 0)
                 }
             }
             true
