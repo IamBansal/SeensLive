@@ -1,5 +1,6 @@
 package com.example.seenslive.pages.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,8 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.seenslive.R
+import com.example.seenslive.pages.screens.EditProfile
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 
 private const val ARG_PARAM1 = "param1"
@@ -26,6 +29,7 @@ class ProfileFragment : Fragment() {
     }
 
     private lateinit var tabLayout: TabLayout
+    private lateinit var editProfile : FloatingActionButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +39,11 @@ class ProfileFragment : Fragment() {
         val layout = inflater.inflate(R.layout.fragment_profile, container, false)
 
         tabLayout = layout.findViewById(R.id.tabs)
+        editProfile = layout.findViewById(R.id.fabEditProfile)
+
+        editProfile.setOnClickListener {
+            startActivity(Intent(context, EditProfile::class.java))
+        }
 
         //To set different width for a tab.
         setTabWidth(0, 0.4f, tabLayout)

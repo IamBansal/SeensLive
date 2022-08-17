@@ -19,31 +19,31 @@
     <item
         android:id="@+id/news"
         android:title="News Feed"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_feed_24"/>
     <item
         android:id="@+id/articles"
         android:title="My Articles"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_file_copy_24"/>
     <item
         android:id="@+id/products"
         android:title="My Products"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_shopping_bag_24"/>
     <item
         android:id="@+id/savedPosts"
         android:title="Saved Posts"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_save_alt_24"/>
     <item
         android:id="@+id/memory"
         android:title="Memories"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_memory_24"/>
     <item
         android:id="@+id/people"
         android:title="People"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_person_24"/>
     <item
         android:id="@+id/pages"
         android:title="Pages"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_emoji_flags_24"/>
     <item
         android:id="@+id/groups"
         android:title="Groups"
@@ -51,41 +51,41 @@
     <item
         android:id="@+id/events"
         android:title="Events"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_event_note_24"/>
     <item
         android:id="@+id/blogs"
         android:title="Blogs"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_library_books_24"/>
     <item
         android:id="@+id/marketPlace"
         android:title="Marketplace"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_transfer_within_a_station_24"/>
     <item
         android:id="@+id/offers"
         android:title="Offers"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_local_offer_24"/>
     <item
         android:id="@+id/jobs"
         android:title="Jobs"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_emoji_objects_24"/>
     <item
         android:id="@+id/forums"
         android:title="Forums"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_forum_24"/>
     <item
         android:id="@+id/movies"
         android:title="Movies"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_local_movies_24"/>
     <item
         android:id="@+id/games"
         android:title="Games"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_games_24"/>
     <item
         android:id="@+id/ads"
         android:title="Ads Manager"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_ads_click_24"/>
     <item
         android:id="@+id/wallet"
         android:title="Wallet"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"/>
 </menu>
