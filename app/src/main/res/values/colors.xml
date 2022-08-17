@@ -12,6 +12,7 @@
     <color name="lightBlue">#C5E6F4</color>
     <color name="hearty">#E05483</color>
     <color name="greeny">#0B2C27</color>
+    <color name="green">#1F9F8C</color>
     <color name="blue">#319BEF</color>
     <color name="primary_dark">#3235AE</color>
 </resources>
