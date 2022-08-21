@@ -43,6 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="First Name"
+                android:autofillHints="name"
+                android:background="@null"
                 android:maxLines="1"
                 android:padding="10sp"
                 android:textColor="?android:textColorPrimary" />
@@ -68,6 +70,8 @@
                 android:id="@+id/etLastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@null"
+                android:autofillHints="name"
                 android:hint="Last Name"
                 android:maxLines="1"
                 android:padding="10sp"
@@ -94,6 +98,7 @@
                 android:id="@+id/etGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@null"
                 android:hint="Gender"
                 android:maxLines="1"
                 android:padding="10sp"
@@ -121,6 +126,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Relationship Status"
+                android:background="@null"
+                android:inputType="textAutoComplete"
                 android:maxLines="1"
                 android:padding="10sp"
                 android:textColor="?android:textColorPrimary" />
@@ -147,6 +154,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Country Name"
+                android:background="@null"
                 android:maxLines="1"
                 android:padding="10sp"
                 android:textColor="?android:textColorPrimary" />
@@ -173,6 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:background="@null"
                 android:padding="10sp"
                 android:textColor="?android:textColorPrimary" />
 
@@ -205,6 +214,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:background="@null"
                 android:padding="10sp"
                 android:textColor="?android:textColorPrimary" />
 
@@ -229,8 +239,10 @@
                 android:id="@+id/etDOB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="mm/dd/yyyy"
+                android:hint="dd/mm/yyyy"
                 android:maxLines="1"
+                android:inputType="date"
+                android:background="@null"
                 android:padding="10sp"
                 android:textColor="?android:textColorPrimary" />
 
