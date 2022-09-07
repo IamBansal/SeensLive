@@ -23,7 +23,7 @@
             android:name=".pages.screens.Signup"
             android:exported="false" />
         <activity
-            android:name=".pages.screens.MainActivity"
+            android:name=".pages.screens.ForgotPass"
             android:exported="false" />
         <activity
             android:name=".pages.screens.Login"

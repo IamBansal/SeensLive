@@ -10,6 +10,7 @@ import com.example.seenslive.R
 class Login : AppCompatActivity() {
 
     private lateinit var signUp : TextView
+    private lateinit var forgotPass : TextView
     private lateinit var login : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,12 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         signUp = findViewById(R.id.tvNewUser)
+        forgotPass = findViewById(R.id.tvForgot)
         login = findViewById(R.id.btnSignIn)
+
+        forgotPass.setOnClickListener {
+            startActivity(Intent(this, ForgotPass::class.java))
+        }
 
         signUp.setOnClickListener {
             startActivity(Intent(this, Signup::class.java))

@@ -325,6 +325,7 @@
                         android:ems="15"
                         android:fontFamily="@font/poppins"
                         android:hint="Username"
+                        android:autofillHints="username"
                         android:background="@color/lightBlue"
                         android:maxLines="1"
                         android:padding="10sp"

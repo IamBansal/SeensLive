@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pages.screens.ForgotPass">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivLogin"
+                    android:layout_width="200sp"
+                    android:layout_height="80sp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/name" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tvJoinLogin"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:layout_centerInParent="true"-->
+                <!--                    android:layout_marginEnd="20sp"-->
+                <!--                    android:fontFamily="@font/poppins"-->
+                <!--                    android:foregroundGravity="center"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Join"-->
+                <!--                    android:textColor="?android:textColorPrimary"-->
+                <!--                    android:textSize="18sp"-->
+                <!--                    app:drawableRightCompat="@drawable/ic_baseline_arrow_drop_down_24" />-->
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:backgroundTint="@color/blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="50sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Reset Password"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="20sp"
+                android:text="Enter the email address you signed up with and we will email you a reset link"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="-25sp"
+        android:elevation="10sp"
+        app:cardCornerRadius="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:elevation="10sp"
+            android:orientation="vertical"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineProvider="background"
+            android:outlineSpotShadowColor="@color/black">
+
+            <EditText
+                android:id="@+id/etEmailForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/btnSearchMarketPlace"
+                android:background="@null"
+                android:hint="Email"
+                android:layout_marginHorizontal="10sp"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:maxLines="1"
+                android:padding="10sp"
+                android:textColor="?android:textColorPrimary" />
+
+            <Button
+                android:id="@+id/btnSendForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginVertical="10sp"
+                android:background="@drawable/oval"
+                android:padding="10sp"
+                android:textSize="16sp"
+                android:text="Send"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

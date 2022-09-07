@@ -61,9 +61,9 @@ class ProfileFragment : Fragment() {
                     1 -> Toast.makeText(context, "This is photo", Toast.LENGTH_SHORT).show()
                     2 -> Toast.makeText(context, "This is friends", Toast.LENGTH_SHORT).show()
                     3 -> Toast.makeText(context, "This is groups", Toast.LENGTH_SHORT).show()
-                    4 -> Toast.makeText(context, "This is groups", Toast.LENGTH_SHORT).show()
-                    5 -> Toast.makeText(context, "This is groups", Toast.LENGTH_SHORT).show()
-                    6 -> Toast.makeText(context, "This is groups", Toast.LENGTH_SHORT).show()
+                    4 -> Toast.makeText(context, "This is videos", Toast.LENGTH_SHORT).show()
+                    5 -> Toast.makeText(context, "This is likes", Toast.LENGTH_SHORT).show()
+                    6 -> Toast.makeText(context, "This is events", Toast.LENGTH_SHORT).show()
                 }
 
             }
