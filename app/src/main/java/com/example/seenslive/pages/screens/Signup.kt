@@ -86,6 +86,12 @@ class Signup : AppCompatActivity() {
                             map["id"] = firebaseAuth.currentUser!!.uid
                             map["Username"] = username
                             map["Password"] = password
+                            map["Gender"] = "ftrh"
+                            map["Relation"] = "sugbxuwfx"
+                            map["Country"] = "sybxowgf"
+                            map["Website"] = "dfergc"
+                            map["About"] = "crcgeg"
+                            map["Birthdate"] = "cehh"
 
                             //Updating user's info to realtime database
                             FirebaseDatabase.getInstance().reference.child("Users")
