@@ -42,7 +42,6 @@
                 android:layout_below="@id/civPhotoProfile"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10sp"
-                android:text="Akshat Bansal"
                 android:textColor="?android:textColorPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold" />

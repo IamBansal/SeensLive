@@ -2,16 +2,24 @@ package com.example.seenslive.pages.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.seenslive.R
+import com.example.seenslive.pages.model.User
 import com.example.seenslive.pages.screens.EditProfile
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -30,6 +38,8 @@ class ProfileFragment : Fragment() {
 
     private lateinit var tabLayout: TabLayout
     private lateinit var editProfile : FloatingActionButton
+    private lateinit var name : TextView
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,8 +48,10 @@ class ProfileFragment : Fragment() {
 
         val layout = inflater.inflate(R.layout.fragment_profile, container, false)
 
+        firebaseAuth = FirebaseAuth.getInstance()
         tabLayout = layout.findViewById(R.id.tabs)
         editProfile = layout.findViewById(R.id.fabEditProfile)
+        name = layout.findViewById(R.id.tvNameProfile)
 
         editProfile.setOnClickListener {
             startActivity(Intent(context, EditProfile::class.java))
@@ -77,7 +89,23 @@ class ProfileFragment : Fragment() {
             }
         })
 
+        getInfo()
+
         return layout
+    }
+
+
+    private fun getInfo() {
+        FirebaseDatabase.getInstance().getReference("Users")
+            .child(firebaseAuth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val user = snapshot.getValue(User::class.java)
+                    name.text = "${user?.FirstName} ${user?.LastName}"
+                }
+
+                override fun onCancelled(error: DatabaseError) {}
+            })
     }
 
     //Function to set different width for a tab.

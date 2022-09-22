@@ -3,29 +3,40 @@ package com.example.seenslive.pages.screens
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.core.view.get
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.seenslive.R
 import com.example.seenslive.pages.fragments.*
+import com.example.seenslive.pages.model.User
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class Home : AppCompatActivity() {
 
     private lateinit var tabLayout: TabLayout
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navView: NavigationView
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
         drawerLayout = findViewById(R.id.drawerLayout)
+        firebaseAuth = FirebaseAuth.getInstance()
         drawerLayout.tag = "Close"
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         navView = findViewById(R.id.navView)
+
+       getInfo()
 
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
@@ -147,6 +158,20 @@ class Home : AppCompatActivity() {
                 }
             }
         })
+    }
+
+
+    private fun getInfo() {
+        FirebaseDatabase.getInstance().getReference("Users")
+            .child(firebaseAuth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val user = snapshot.getValue(User::class.java)
+                    navView.menu[0].title = "${user?.FirstName} ${user?.LastName}"
+                }
+
+                override fun onCancelled(error: DatabaseError) {}
+            })
     }
 
     //To set the badge on tab item
