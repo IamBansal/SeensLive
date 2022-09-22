@@ -125,7 +125,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:text="I am an Android Developer"
+                android:id="@+id/tvAbout"
                 android:gravity="center"
                 android:textColor="?android:textColorPrimary"
                 android:layout_width="match_parent"
@@ -138,34 +138,34 @@
                 android:background="?attr/colorButtonNormal" />
 
             <TextView
+                android:id="@+id/tvGender"
                 android:layout_marginTop="10sp"
                 android:drawableLeft="@drawable/ic_baseline_female_24"
                 android:drawablePadding="10sp"
-                android:text="Male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/tvRelation"
                 android:layout_marginTop="10sp"
                 android:drawableLeft="@drawable/ic_baseline_favorite_24"
                 android:drawablePadding="10sp"
-                android:text="Single"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/tvDOB"
                 android:layout_marginTop="10sp"
                 android:drawableLeft="@drawable/ic_baseline_cake_24"
                 android:drawablePadding="10sp"
-                android:text="11/10/2002"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/tvCountry"
                 android:layout_marginTop="10sp"
                 android:drawableLeft="@drawable/ic_baseline_wifi_24"
                 android:drawablePadding="10sp"
-                android:text="Followed by 10+ people"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

@@ -39,6 +39,11 @@ class ProfileFragment : Fragment() {
     private lateinit var tabLayout: TabLayout
     private lateinit var editProfile : FloatingActionButton
     private lateinit var name : TextView
+    private lateinit var gender : TextView
+    private lateinit var about : TextView
+    private lateinit var relationStatus : TextView
+    private lateinit var dob : TextView
+    private lateinit var country : TextView
     private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
@@ -52,6 +57,11 @@ class ProfileFragment : Fragment() {
         tabLayout = layout.findViewById(R.id.tabs)
         editProfile = layout.findViewById(R.id.fabEditProfile)
         name = layout.findViewById(R.id.tvNameProfile)
+        gender = layout.findViewById(R.id.tvGender)
+        about = layout.findViewById(R.id.tvAbout)
+        relationStatus = layout.findViewById(R.id.tvRelation)
+        dob = layout.findViewById(R.id.tvDOB)
+        country = layout.findViewById(R.id.tvCountry)
 
         editProfile.setOnClickListener {
             startActivity(Intent(context, EditProfile::class.java))
@@ -102,6 +112,11 @@ class ProfileFragment : Fragment() {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val user = snapshot.getValue(User::class.java)
                     name.text = "${user?.FirstName} ${user?.LastName}"
+                    about.text = user?.About
+                    gender.text = user?.Gender
+                    relationStatus.text = user?.Relation
+                    dob.text = user?.Birthdate
+                    country.text = user?.Country
                 }
 
                 override fun onCancelled(error: DatabaseError) {}
